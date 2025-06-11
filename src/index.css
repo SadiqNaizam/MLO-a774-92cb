@@ -4,89 +4,87 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 17% 97%; /* Light Gray - approx #F9FAFB */
+    --foreground: 215 28% 17%; /* Dark Gray - approx #1F2937 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 215 28% 17%; /* Dark Gray */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 215 28% 17%; /* Dark Gray */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 170 82% 31%; /* Teal-600 - approx #0D9488 */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 16% 93%; /* Light Gray - approx #E5E7EB (gray-200) */
+    --secondary-foreground: 170 82% 31%; /* Teal-600 (same as primary) */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 16% 90%; /* Slightly darker Light Gray - approx #D1D5DB (gray-300) */
+    --muted-foreground: 215 20% 45%; /* Medium Gray - approx #6B7280 (gray-500) */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 170 75% 66%; /* Lighter Teal - approx #5EEAD4 (teal-300) */
+    --accent-foreground: 170 82% 25%; /* Darker Teal for contrast on light teal */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%; /* Red-500 - approx #EF4444 */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 14% 89%; /* Gray-300ish - approx #D1D5DB */
+    --input: 210 14% 89%; /* Gray-300ish */
+    --ring: 170 80% 40%; /* Teal-500 - approx #14B8A6 (for focus rings) */
 
-    --radius: 0.5rem;
+    --radius: 0.625rem; /* 10px */
 
-    --sidebar-background: 0 0% 98%;
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 210 17% 98%; /* Very Light Gray, almost white */
+    --sidebar-foreground: 215 28% 17%; /* Dark Gray */
+    --sidebar-primary: 170 82% 31%; /* Teal-600 */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 170 60% 90%; /* Very Light Teal */
+    --sidebar-accent-foreground: 170 82% 31%; /* Teal-600 */
+    --sidebar-border: 210 14% 89%; /* Gray-300ish */
+    --sidebar-ring: 170 80% 40%; /* Teal-500 */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 29% 10%; /* Dark Gray - approx #111827 (gray-900) */
+    --foreground: 220 14% 96%; /* Light Gray - approx #F3F4F6 (gray-100) */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 25% 13%; /* Slightly Lighter Dark Gray - approx #1F2937 (gray-800) */
+    --card-foreground: 220 14% 96%; /* Light Gray */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 25% 13%; /* Slightly Lighter Dark Gray */
+    --popover-foreground: 220 14% 96%; /* Light Gray */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 170 67% 50%; /* Teal-400 - approx #2DD4BF */
+    --primary-foreground: 170 60% 15%; /* Very Dark Teal/Almost Black */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 20% 18%; /* Dark Gray - approx #374151 (gray-700) */
+    --secondary-foreground: 170 67% 50%; /* Teal-400 (same as dark primary) */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 15% 25%; /* Darker Gray - approx #4B5563 (gray-600) */
+    --muted-foreground: 220 10% 70%; /* Lighter Gray - approx #9CA3AF (gray-400) */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 170 82% 31%; /* Darker Teal - approx #0D9488 (teal-600) */
+    --accent-foreground: 0 0% 100%; /* White (for contrast on darker teal) */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 60% 45%; /* Darker Red - approx #DC2626 (red-600) */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 18% 25%; /* Gray-700ish - approx #374151 */
+    --input: 220 18% 25%; /* Gray-700ish */
+    --ring: 170 67% 50%; /* Teal-400 (for focus rings in dark mode) */
+
+    /* Font and radius are inherited from :root */
+
+    --sidebar-background: 220 29% 10%; /* Dark Gray */
+    --sidebar-foreground: 220 14% 96%; /* Light Gray */
+    --sidebar-primary: 170 67% 50%; /* Teal-400 */
+    --sidebar-primary-foreground: 170 60% 15%; /* Very Dark Teal */
+    --sidebar-accent: 220 20% 18%; /* Dark Gray (similar to secondary) */
+    --sidebar-accent-foreground: 170 67% 50%; /* Teal-400 */
+    --sidebar-border: 220 18% 25%; /* Gray-700ish */
+    --sidebar-ring: 170 67% 50%; /* Teal-400 */
   }
 }
 
@@ -97,5 +95,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans); /* Apply the base font family */
   }
 }
